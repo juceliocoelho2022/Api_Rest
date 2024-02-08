@@ -1,10 +1,7 @@
 package com.JucelioCoelho.curso.Api.Rest.funcionario;
 
 
-<<<<<<< HEAD
-=======
 import com.JucelioCoelho.curso.Api.Rest.endereco.Endereco;
->>>>>>> e3c560a (contoller)
 import jakarta.persistence.Embedded;
 import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;

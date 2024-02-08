@@ -1,11 +1,13 @@
 package com.JucelioCoelho.curso.Api.Rest.controllers;
 
+import com.JucelioCoelho.curso.Api.Rest.infra.security.TokenService;
+import com.JucelioCoelho.curso.Api.Rest.infra.security.dadosTokenJWT;
 import com.JucelioCoelho.curso.Api.Rest.usuario.DadosAutentificacao;
+import com.JucelioCoelho.curso.Api.Rest.usuario.Usuario;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
-import org.springframework.security.core.token.TokenService;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;

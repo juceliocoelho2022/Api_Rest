@@ -1,6 +1,9 @@
 package com.JucelioCoelho.curso.Api.Rest.usuario;
 
 import com.JucelioCoelho.curso.Api.Rest.endereco.DadosEndereco;
+
+import com.JucelioCoelho.curso.Api.Rest.services.CpfJaCadastrado;
+
 import org.hibernate.validator.constraints.br.CPF;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.Email;
