@@ -2,6 +2,8 @@ package com.JucelioCoelho.curso.Api.Rest.controllers;
 
 import java.util.List;
 
+import com.JucelioCoelho.curso.Api.Rest.services.PasswordEncryptionService;
+import com.JucelioCoelho.curso.Api.Rest.usuario.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -13,8 +15,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.util.UriComponentsBuilder;
-
-
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.ExampleObject;
@@ -77,7 +77,7 @@ public class UsuarioController {
                     @io.swagger.v3.oas.annotations.responses.ApiResponse( responseCode = "404",content = @Content),
                     @io.swagger.v3.oas.annotations.responses.ApiResponse( responseCode = "500",content = @Content),
             })
-    public List<br.com.farmacos.usuario.DadosListagemUsuarios> listar() {
+    public List<com.JucelioCoelho.curso.Api.Rest.usuario.DadosListagemUsuarios> listar() {
         return repository.findAll().stream().map(DadosListagemUsuarios::new).toList();
     }
     @GetMapping("/{id}")
