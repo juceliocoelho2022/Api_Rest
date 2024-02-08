@@ -2,6 +2,9 @@ package com.JucelioCoelho.curso.Api.Rest.services;
 
 import java.util.Optional;
 
+
+import com.JucelioCoelho.curso.Api.Rest.usuario.Usuario;
+import com.JucelioCoelho.curso.Api.Rest.usuario.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import jakarta.validation.ConstraintValidator;
 import jakarta.validation.ConstraintValidatorContext;
